@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav > img{
+    margin: 20px 0 0 20px;
+    display: block;
+    padding-right: 30px;
+    float: left;
+}
+
+nav > ul{
+    margin-left: 290px;
+}
+
+nav  ul li{
+    padding-right: 20px;
+    padding-top: 20px;
+    display: block;
+    float: left;
+    color: #9fef00;
+}
+
+nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav ul a:hover{
+    color: gray;
+}
+
+.top-right ul li{
+    display: block;
+    float: right;
+
+}
+
+article{
+    clear: both;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+article h1{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 72px;
+    color: #ffffff;
+}
+
+h1{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+h1 span{
+    color: #ff022c;
+}
+
+h1:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #212529 5%, #212529 100% );
+    animation: animate 5.5s linear forwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes animate{
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 120%;
+    }
+}
+
+article h2{
+    padding-top: 0;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.p-line{
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding-bottom: 50px;
+    color: #a4b1cd;
+}
+
+.btn{
+    display: block;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid #9fef00;
+    float: left;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #9fef00;
+}
+
+
+.center{
+    display: block;
+    margin: 0 auto;
+    padding-left: 400px;
+    width: 800px;
+    height: 10px;
+}
+
+.btn:hover{
+    background-color: #ff022c;
+    color: #fff;
+}
+
+.text-animation{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.static-text,
+.animation-text{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.animation-text{
+    color: #ff022c;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*  right now idk what mistake I'm doing (h1 animation isn't working) so try to fix it. */
+
+
+
+.text{
+    position: relative;
+    animation: animate 3s steps(3) infinite;
+}
+
+@keyframes animate{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -180px;
+    }
+}
+/*    #################  Use it if you want  ########################
+.cursor{
+    position: relative;
+}
+.cursor::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #212529;
+    position: absolute;
+    left: 0;
+    border-left: 1px solid #ff022c;
+    animation: animate_cursor 2s steps(10) infinite;
+}
+@keyframes animate_cursor {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: calc(100% + 50px);
+    }
+    
+}
+    ###########################################################
+*/
+
+
